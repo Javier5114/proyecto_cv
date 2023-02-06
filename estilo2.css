@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(260deg,rgb(6, 117, 112),rgb(8, 75, 66),rgb(4, 27, 90));
+    font-family: 'Roboto Slab', serif;
+}
+
+.Encabezado{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    height:auto;
+    margin: 0px;
+    padding: 10px;
+    border: 0px;
+    background: linear-gradient(to right,black, rgb(50, 7, 119),rgb(1, 59, 25), rgb(12, 121, 2));
+    font-family:'Roboto Slab', serif;
+    
+}
+
+.Encabezado:hover{
+    background: linear-gradient(to right,purple,rgb(2, 65, 18), black);
+}
+
+.foto_perfil{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    padding: 0px;
+    justify-content: center;
+}
+
+.imagen{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.foto_perfil:hover{
+    filter: saturate(180%);
+}
+
+.Encabezado_texto{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    height:auto;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.Barra{
+    display: inline;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+ul {
+    list-style-type: none;
+    position: relative;
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: black;
+}
+
+li{
+    display: inline;
+    position: relative;
+    float: right;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size:17px;
+}
+
+.Barra ul li::before{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background: purple;
+    position: absolute;
+    left: 0px;
+    bottom: 2px;
+    transition: 0.3s ease-out;
+}
+
+.Barra ul li:hover::before{
+    width: 100%;
+}
+
+.Contenedor_gral{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.Contenedor1{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.Info_personal{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    padding: 30px;
+    font-size: 20px;
+    color: beige;
+}
+
+.Contenedor2{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.Contenedor2 h2{
+    text-align: right;
+}
+
+.Habilidades{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    color: beige;
+}
+
+.mis_habilidades{
+    position: relative;
+    width: 70%;
+    left: 30%;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.detalles{
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.menu{
+    position: relative;
+    border:3px solid purple;
+    border-radius: 20px;
+    height: 20px;
+}
+
+progress{
+    width: 100%;
+}
+
+.Contenedor3{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.Antecedentes_laborales{
+    position: relative;
+    width: auto;
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 30px;
+}
+
+.antecedentes{
+    margin-top: 30px;
+}
+
+.Contenedor4{
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10%;
+    font-size: 20px;
+    color: antiquewhite;
+    left: 25%;
+    
+}
+
+.Contenedor4 h2{
+    text-align: center;
+}
+
+.Formulari_contacto,input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+textarea{
+    min-height: 50px;
+    max-height: 100px;
+    max-width: 100%;
+}
+
+#boton{
+    background: purple;
+    border: 4px solid black;
+    border-radius: 15px;
+    font-size: 15px;
+    width: 30%;
+    float: right;
+    
+}
+
+h1{
+    font-size: 65px;
+    justify-content: center;
+}
+
+h2{
+    font-size: 45px;
+    margin-bottom: 25px;
+    color:whitesmoke;
+}
+
+p,span,h3{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+
+
